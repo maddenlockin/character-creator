@@ -4,9 +4,9 @@ import Select from '../../components/Select/Select';
 
 export default function Home() {
 // useState calls, [] destructuring an array
-    const [top, setTop] = useState("");
-    const [middle, setMiddle] = useState("");
-    const [bottom, setBottom] = useState("dog");
+    const [top, setTop] = useState("two");
+    const [middle, setMiddle] = useState("b");
+    const [bottom, setBottom] = useState("beta");
     const [input, setInput] = useState("");
     const [catchphrases, setCatchphrases] = useState([]);
     const [topCount, setTopCount] = useState(0);
