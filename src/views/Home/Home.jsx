@@ -1,5 +1,6 @@
 import React from 'react'
 import { useState } from "react"
+import Character from '../../components/Character/Character';
 import Select from '../../components/Select/Select';
 
 export default function Home() {
@@ -35,6 +36,7 @@ export default function Home() {
                 bottomCount={bottomCount}
                 setBottomCount={setBottomCount}
             />
+            <Character top={top} middle={middle} bottom={bottom} />
         </div>
     );
 }
