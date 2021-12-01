@@ -2,6 +2,7 @@ import './App.css';
 import { useState } from "react";
 import Character from "./components/Character/Character";
 import Select from "./components/Select/Select";
+import Display from './components/Display/Display';
 
 function App() {
   // useState calls, [] destructuring an array
@@ -44,6 +45,12 @@ function App() {
         judgements={judgements}
         setJudgements={setJudgements}
         handleClick={handleClick}
+      />
+      <Display 
+        judgements={judgements}
+        topCount={topCount}
+        middleCount={middleCount}
+        bottomCount={bottomCount}
       />
       <Character top={top} middle={middle} bottom={bottom} />
     </div>
