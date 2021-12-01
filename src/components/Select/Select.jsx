@@ -1,6 +1,16 @@
 import React from 'react'
 
-export default function Select({top, middle, bottom, setTop, setMiddle, setBottom}) {
+export default function Select({
+    top, 
+    middle, 
+    bottom, 
+    setTop, 
+    setMiddle, 
+    setBottom, 
+    newJudgement, 
+    setJudgements, 
+    handleClick
+}) {
     const tOptions = ['tophat', 'crown', 'church', 'bunny-ear']
     const midOptions = ['chillin', 'furry', 'squish', 'wrinkles']
     const botOptions = ['cat', 'green-dragon', 'pizza', 'pink-dragon']
@@ -23,7 +33,7 @@ export default function Select({top, middle, bottom, setTop, setMiddle, setBotto
                 })}
                 </select>
             </label>
-            
+
             <label>
                 Bottom
                 <select value={bottom} onChange={(e) => setBottom(e.target.value)}>
@@ -32,6 +42,19 @@ export default function Select({top, middle, bottom, setTop, setMiddle, setBotto
                 })}
                 </select>
             </label>
+
+            <label>
+                Judgements
+                <input
+                    type='text'
+                    value={newJudgement}
+                    onChange={(e) => setJudgements(e.target.value)}
+                />
+            </label>
+
+            <button type='button' onClick={handleClick}>
+                Judge
+            </button>
         </div>
     )
 }

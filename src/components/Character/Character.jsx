@@ -7,8 +7,8 @@ export default function Character({top, middle, bottom}) {
                 className="top"
                 style={{
                     backgroundImage: `url(./${top}-chick-head.png)`,
-                    height: 150,
-                    width: 150,
+                    height: 200,
+                    width: 200,
                     backgroundSize: "cover",
                     backgroundRepeat: "no-repeat",
                 }}
