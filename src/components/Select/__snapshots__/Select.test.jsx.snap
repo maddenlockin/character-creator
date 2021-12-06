@@ -1,0 +1,153 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should render select component 1`] = `
+<div>
+  <section
+    class="select"
+  >
+    <label>
+      Top
+      <select>
+        <option>
+          tophat
+        </option>
+        <option>
+          crown
+        </option>
+        <option>
+          church
+        </option>
+        <option>
+          bunny-ear
+        </option>
+      </select>
+    </label>
+    <label>
+      Middle
+      <select>
+        <option>
+          chillin
+        </option>
+        <option>
+          furry
+        </option>
+        <option>
+          squish
+        </option>
+        <option>
+          wrinkles
+        </option>
+      </select>
+    </label>
+    <label>
+      Bottom
+      <select>
+        <option>
+          cat
+        </option>
+        <option>
+          green-dragon
+        </option>
+        <option>
+          pizza
+        </option>
+        <option>
+          pink-dragon
+        </option>
+      </select>
+    </label>
+    <label>
+      Judgements
+      <input
+        aria-label="judgement input"
+        type="text"
+        value=""
+      />
+    </label>
+    <button
+      type="button"
+    >
+      Judge
+    </button>
+    <div>
+      <label />
+    </div>
+  </section>
+</div>
+`;
+
+exports[`should render select component 2`] = `
+<div>
+  <section
+    class="select"
+  >
+    <label>
+      Top
+      <select>
+        <option>
+          tophat
+        </option>
+        <option>
+          crown
+        </option>
+        <option>
+          church
+        </option>
+        <option>
+          bunny-ear
+        </option>
+      </select>
+    </label>
+    <label>
+      Middle
+      <select>
+        <option>
+          chillin
+        </option>
+        <option>
+          furry
+        </option>
+        <option>
+          squish
+        </option>
+        <option>
+          wrinkles
+        </option>
+      </select>
+    </label>
+    <label>
+      Bottom
+      <select>
+        <option>
+          cat
+        </option>
+        <option>
+          green-dragon
+        </option>
+        <option>
+          pizza
+        </option>
+        <option>
+          pink-dragon
+        </option>
+      </select>
+    </label>
+    <label>
+      Judgements
+      <input
+        aria-label="judgement input"
+        type="text"
+        value=""
+      />
+    </label>
+    <button
+      type="button"
+    >
+      Judge
+    </button>
+    <div>
+      <label />
+    </div>
+  </section>
+</div>
+`;
