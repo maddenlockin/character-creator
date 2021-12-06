@@ -7,8 +7,8 @@ export default function Select({
     setTop, 
     setMiddle, 
     setBottom, 
-    newJudgement, 
-    setJudgements, 
+    judgement, 
+    setJudgement, 
     handleClick
 }) {
     const tOptions = ['tophat', 'crown', 'church', 'bunny-ear']
@@ -46,9 +46,10 @@ export default function Select({
             <label>
                 Judgements
                 <input
+                    aria-label='judgement input'
                     type='text'
-                    value={newJudgement}
-                    onChange={(e) => setJudgements(e.target.value)}
+                    value={judgement}
+                    onChange={(e) => setJudgement(e.target.value)}
                 />
             </label>
 

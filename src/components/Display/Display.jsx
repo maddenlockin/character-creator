@@ -1,16 +1,19 @@
 import React from 'react'
 
-export default function Display(
-    judgements,
+export default function Display({
+    judgement,
+    judgementArr,
     // topCount,
     // middleCount,
     // bottomCount
-) {
+}) {
     return (
-        <div>
-            {judgements.map((judgement) =>  (
-                <p>judgement</p>
+        <ul>
+            {/* <li> {judgementArr}  </li> */}
+            {judgementArr.map((judgement) =>  (
+                <p>{judgement}</p>
             ))}
-        </div>
+            <li key={judgement} aria-label='list items'>'{judgement}'</li>
+        </ul>
     )
 }

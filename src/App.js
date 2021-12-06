@@ -13,12 +13,14 @@ function App() {
   const [topCount, setTopCount] = useState(0);
   const [middleCount, setMiddleCount] = useState(0);
   const [bottomCount, setBottomCount] = useState(0);
-  const [judgements, setJudgements] = useState(0);
-  const [newJudgement, setNewJudgement] = useState(0);
+  const [judgement, setJudgement] = useState('');
+  const [judgementArr, setJudgementArr] = useState([]);
 
   const handleClick = () => {
-    setJudgements((prevState) => {
-      return [...prevState, newJudgement];
+    //console.log(judgementArr.type, "HERE")
+    setJudgementArr((prevState) => {
+      //console.log(prevState.type)
+      return [...prevState, judgement];
     });
   };
 
@@ -40,14 +42,13 @@ function App() {
         setMiddleCount={setMiddleCount}
         bottomCount={bottomCount}
         setBottomCount={setBottomCount}
-        newJudgement={newJudgement}
-        setNewJudgement={setNewJudgement}
-        judgements={judgements}
-        setJudgements={setJudgements}
+        judgement={judgement}
+        setJudgement={setJudgement}
         handleClick={handleClick}
       />
-      <Display 
-        judgements={judgements}
+      <Display
+        judgement={judgement}
+        judgementArr={judgementArr}
         topCount={topCount}
         middleCount={middleCount}
         bottomCount={bottomCount}
