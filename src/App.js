@@ -17,9 +17,7 @@ function App() {
   const [judgementArr, setJudgementArr] = useState([]);
 
   const handleClick = () => {
-    //console.log(judgementArr.type, "HERE")
     setJudgementArr((prevState) => {
-      //console.log(prevState.type)
       return [...prevState, judgement];
     });
   };
