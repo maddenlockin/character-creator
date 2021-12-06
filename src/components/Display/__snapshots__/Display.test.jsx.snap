@@ -1,0 +1,29 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should render Display component 1`] = `
+<div>
+  <ul>
+    <li
+      aria-label="list items"
+    >
+      '
+      '
+    </li>
+    <p>
+      ewww
+    </p>
+    <p>
+      blah
+    </p>
+    <p>
+      ugh
+    </p>
+  </ul>
+  <p>
+    The top of your character has been changed 
+     times, the middle 
+     times, and the bottom 
+     times.
+  </p>
+</div>
+`;
