@@ -1,70 +1,42 @@
-# Getting Started with Create React App
+# React Character Designer
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+### Learning Objectives
 
-## Available Scripts
+- Create a React app using reusable stateless components and stateful
+- Use npx create-react-app my-cool-project to create a react app
+- Push a react app to github using git remote set-url origin
+- Use Netlify to deploy a React app.
+- Use attributes in parent components to pass data down to child components as props.
+- Explain that when state changes in any component, React updates the DOM in whatever components are impacted by the change.
+- Use .map to iterate over an array and render new elements for each item in an array.
+- Add a unique key to each element rendered from a .map in React.
+- Use useState to add state to a React component
+- Destructure props in functional components
+- Use the presentational / container component pattern
 
-In the project directory, you can run:
+### Live Example
 
-### `npm start`
+[React Character Designer](https://alchemy-react-character.netlify.app/)
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+### Description
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+For this app, we'll be creating a React app using props and state.
 
-### `npm test`
+Create a new React app using `npx create-react-app <app name>` and be sure to add in your `.eslint` and prettier [configs](https://github.com/alchemycodelab/config-build-deploy/tree/main/eslint).
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### Acceptance Criteria
 
-### `npm run build`
+- Users should be able to update the characters head, torso and legs using select menus
+- Users should be able to add catchphrases for their character which get listed on the page
+- The app should utilize the presentational / container component pattern. Use <App /> as your container component and make presentational components in a `components` directory
+- Presentational components should have snapshot tests
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### Rubric
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+| Task                                                                                 | Points |
+| ------------------------------------------------------------------------------------ | ------ |
+| Users are able to update the characters features (2 points per feature)              | 6      |
+| Users are able to add catchphrases                                                   | 4      |
+| App is separated into presentational / container components that pass state as props | 4      |
+| Snapshot tests                                                                       | 4      |
+| Deployed on Netlify, CI Passing                                                      | 2      |

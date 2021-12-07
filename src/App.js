@@ -1,23 +1,57 @@
-import logo from './logo.svg';
 import './App.css';
+import { useState } from "react";
+import Character from "./components/Character/Character";
+import Select from "./components/Select/Select";
+import Display from './components/Display/Display';
 
 function App() {
+  // useState calls, [] destructuring an array
+  const [top, setTop] = useState("church");
+  const [middle, setMiddle] = useState("wrinkles");
+  const [bottom, setBottom] = useState("cat");
+  const [input, setInput] = useState("");
+  const [topCount, setTopCount] = useState(0);
+  const [middleCount, setMiddleCount] = useState(0);
+  const [bottomCount, setBottomCount] = useState(0);
+  const [judgement, setJudgement] = useState('');
+  const [judgementArr, setJudgementArr] = useState([]);
+
+  const handleClick = () => {
+    setJudgementArr((prevState) => {
+      return [...prevState, judgement];
+    });
+  };
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      {/* state variables passed as props to presentational components */}
+      <Select
+        top={top}
+        setTop={setTop}
+        middle={middle}
+        setMiddle={setMiddle}
+        bottom={bottom}
+        setBottom={setBottom}
+        input={input}
+        setInput={setInput}
+        topCount={topCount}
+        setTopCount={setTopCount}
+        middleCount={middleCount}
+        setMiddleCount={setMiddleCount}
+        bottomCount={bottomCount}
+        setBottomCount={setBottomCount}
+        judgement={judgement}
+        setJudgement={setJudgement}
+        handleClick={handleClick}
+      />
+      <Display
+        judgement={judgement}
+        judgementArr={judgementArr}
+        topCount={topCount}
+        middleCount={middleCount}
+        bottomCount={bottomCount}
+      />
+      <Character top={top} middle={middle} bottom={bottom} />
     </div>
   );
 }
