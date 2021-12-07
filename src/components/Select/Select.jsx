@@ -23,17 +23,20 @@ export default function Select({
 
 
     const handleTopChange = (e) => {
+        e.preventDefault();
         setTop(e.target.value);
         setTopCount(topCount + 1);
     };
 
     const handleMiddleChange = (e) => {
-        setTop(e.target.value);
+        e.preventDefault();
+        setMiddle(e.target.value);
         setMiddleCount(middleCount + 1);
     };
 
     const handleBottomChange = (e) => {
-        setTop(e.target.value);
+        e.preventDefault();
+        setBottom(e.target.value);
         setBottomCount(bottomCount + 1);
     };
     return (
